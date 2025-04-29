@@ -8,4 +8,5 @@ print (dataset.describe)
 columns = ["Weekly_Sales", "Holiday_Flag", "Temperature", "Fuel_Price", "CPI", "Unemployment"]
 
 for column in columns:
+   print(dataset[column].describe())
     
