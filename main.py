@@ -8,5 +8,8 @@ print (dataset.describe)
 columns = ["Weekly_Sales", "Holiday_Flag", "Temperature", "Fuel_Price", "CPI", "Unemployment"]
 
 for column in columns:
-   print(dataset[column].describe())
+    print(f"\nColumn: {column}")
+    print(f"Mean: {dataset[column].mean()}")
+    print(f"Median: {dataset[column].median()}")
+    print(f"Mode: {dataset[column].mode().tolist()}")
     
